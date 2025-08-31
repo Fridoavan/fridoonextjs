@@ -1,9 +1,17 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function HomePage() {
   return (
-    <div style={{ textAlign: "center" }}>
+    <motion.div
+      style={{ textAlign: "center" }}
+      initial={{ opacity: 0, y: 20 }}     // ⬅️ Mulai transparan & agak turun
+      animate={{ opacity: 1, y: 0 }}      // ⬅️ Fade in + naik
+      transition={{ duration: 0.8 }}      // ⬅️ Durasi animasi
+    >
       <Image
         src="/fridorz.jpeg"   // cukup langsung "/fridorz.jpeg"
         alt="Frido Avan"
@@ -16,6 +24,6 @@ export default function HomePage() {
       <div style={{ marginTop: "20px" }}>
         <Link href="/about">About</Link> | <Link href="/projects">Projects</Link>
       </div>
-    </div>
+    </motion.div>
   );
 }
