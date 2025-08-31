@@ -1,0 +1,85 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: #000;
+  color: #00ff99;
+  font-family: monospace, sans-serif;
+}
+
+/* Container */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+nav {
+  background: #111;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #00ff99;
+}
+
+nav a {
+  color: #00ff99;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 2px solid #00ff99;
+}
+
+/* Neon Effect */
+.neon {
+  text-shadow: 0 0 5px #00ff99,
+               0 0 10px #00ff99,
+               0 0 20px #00ff99;
+}
+
+/* Project Card */
+.project-card {
+  border: 1px solid #00ff99;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #0a0a0a;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+/* Skill List */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-list span {
+  border: 1px solid #00ff99;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #111;
+}
